@@ -63,7 +63,10 @@ let info = convertFromUIImagePickerControllerInfoKeyDictionary(info)
             photoImageView.contentMode = .scaleAspectFill
             photoImageView.clipsToBounds = true
         }
-        
+      
+      guard let photoImageView = photoImageView else {
+        return
+      }
         
         //Constraint Programmatically
         let leadingConstraint = NSLayoutConstraint(item: photoImageView, attribute: NSLayoutConstraint.Attribute.leading, relatedBy: NSLayoutConstraint.Relation.equal, toItem: photoImageView.superview, attribute: NSLayoutConstraint.Attribute.leading, multiplier: 1, constant: 0)
