@@ -60,6 +60,38 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DDB06EFF22945A92005207A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F4D336CA1D2E4309003010DD /* LaunchScreen.storyboard */,
+				F4D336C51D2E4309003010DD /* Main.storyboard */,
+				F4E162B61D33879D00B23D25 /* RestaurantTableViewCell.swift */,
+				F464A2F11D49A8C40023E159 /* RestaurantDetailTableViewCell.swift */,
+				F4D336C81D2E4309003010DD /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DDB06F0122945A99005207A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F4ACF3EC1D40C4150026FC1A /* Restaurant.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DDB06F0222945AD5005207A8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F440CDD11D3F4DB2000FB65E /* RestaurantDetailViewController.swift */,
+				F4D336D31D2E45AB003010DD /* RestaurantTableViewController.swift */,
+				DD7F983D1ED2245F0018B943 /* ReviewViewController.swift */,
+				DD2DA0811ED766D40010B933 /* MapViewController.swift */,
+				DDA5E7BC1ED9D52600D09EF8 /* AddRestaurantController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		F4D336B51D2E4309003010DD = {
 			isa = PBXGroup;
 			children = (
@@ -81,18 +113,10 @@
 			isa = PBXGroup;
 			children = (
 				F4D336C11D2E4309003010DD /* AppDelegate.swift */,
-				F4D336C51D2E4309003010DD /* Main.storyboard */,
-				F4D336C81D2E4309003010DD /* Assets.xcassets */,
-				F4D336CA1D2E4309003010DD /* LaunchScreen.storyboard */,
+				DDB06F0222945AD5005207A8 /* Controller */,
 				F4D336CD1D2E4309003010DD /* Info.plist */,
-				F4D336D31D2E45AB003010DD /* RestaurantTableViewController.swift */,
-				F4E162B61D33879D00B23D25 /* RestaurantTableViewCell.swift */,
-				F440CDD11D3F4DB2000FB65E /* RestaurantDetailViewController.swift */,
-				F4ACF3EC1D40C4150026FC1A /* Restaurant.swift */,
-				F464A2F11D49A8C40023E159 /* RestaurantDetailTableViewCell.swift */,
-				DD7F983D1ED2245F0018B943 /* ReviewViewController.swift */,
-				DD2DA0811ED766D40010B933 /* MapViewController.swift */,
-				DDA5E7BC1ED9D52600D09EF8 /* AddRestaurantController.swift */,
+				DDB06F0122945A99005207A8 /* Model */,
+				DDB06EFF22945A92005207A8 /* View */,
 			);
 			path = FoodPin;
 			sourceTree = "<group>";
@@ -124,7 +148,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = AppCoda;
 				TargetAttributes = {
 					F4D336BD1D2E4309003010DD = {
@@ -142,10 +166,9 @@
 			};
 			buildConfigurationList = F4D336B91D2E4309003010DD /* Build configuration list for PBXProject "FoodPin" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
@@ -215,6 +238,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -273,6 +297,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
